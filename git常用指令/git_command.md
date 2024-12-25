@@ -44,6 +44,30 @@
   >
   > git config --global merg.ff no (全局，都不使用 快速合并)
 
+### 修改上一次的提交记录
+
+- ### 最后一次提交且未push
+
+```
+git commit --amend
+```
+
+git会打开$EDITOR编辑器，它会加载这次提交的日志，这样我们就可以在上面编辑，编辑后保存即完成此次的修改。
+
+
+
+- ### 最后一次提交且已push到服务器
+
+```
+git commit --amend
+git push origin master --force
+```
+
+使用push推送到远程服务器是需要加上--force，让服务器更新历史记录。
+
+
+
+
 # 2 ssh密钥
 
 ## 2.1 配置SSH公钥
@@ -246,5 +270,4 @@ JLinkLog.txt
 - README.md 
 
   >  自述文件，整个项目的简介、使用方法等
-
 
