@@ -122,7 +122,7 @@ git push origin master --force
 
 - 推送标签
   - git push origin  <v1.0>  *(只推送一个版本)*
-  - git push origion --tags *(推送所有)*
+  - git push origin --tags *(推送所有)*
 
 - 查看标签
   - git tag
@@ -138,9 +138,25 @@ git push origin master --force
 
   - git push origin :refr/tags/<v2.0>
 
+# 5 链接外部库
+
+```bash
+git submodule add <仓库的URL> <存放子模块的文件夹>
+```
 
 
-# 5 commit 规范
+
+例如：
+
+```bash
+git submodule add https://github.com/exampleuser/SubRepo.git child/SubRepo
+```
+
+这将把”SubRepo”子仓库作为一个子模块添加到”MainRepo”主仓库的”child/SubRepo”文件夹中。
+
+
+
+# 6 commit 规范
 
 - feat：新功能（Feature）
 
