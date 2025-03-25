@@ -106,6 +106,30 @@ git push origin master --force
 
 
 
+# remote
+
+- 添加外部链接
+
+```
+git remote add [name] [url]
+```
+
+- 删除
+
+```
+git remote remove [name]
+```
+
+- 重命名
+
+```
+git remote rename [old_name] [new_name]
+```
+
+
+
+
+
 # 3 git 缓存区
 
 - git rm -r --cached <文件名>
