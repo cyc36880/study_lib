@@ -74,7 +74,7 @@ git push origin master --force
 
 ​	*会覆盖已经生成的密钥*
 
-- ssh-keygen -t rsa (生成公钥)
+- ssh-keygen -t rsa   "邮箱" (生成公钥)
 
 - cat  ~/.ssh/id_rsa.pub (查看生成的公钥)
 
@@ -106,7 +106,7 @@ git push origin master --force
 
 
 
-# remote
+# - remote
 
 - 添加外部链接
 
@@ -128,7 +128,11 @@ git remote rename [old_name] [new_name]
 
 
 
+# - 删除目录下的所有.git 文件夹
 
+
+
+> find . -name ".git" | xargs rm -Rf
 
 # 3 git 缓存区
 
